@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para o corpo */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background: #6f42c1; /* Roxo-azulado */
+            color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        /* Estilo das seções */
+        section {
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Linha de separação dupla */
+        section:not(#contato)::before,
+        section:not(#contato)::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background: #6f42c1; /* Roxo-azulado */
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        section:not(#contato)::before {
+            top: 0; /* Linha superior */
+        }
+
+        section:not(#contato)::after {
+            bottom: 0; /* Linha inferior */
+        }
+
+        /* Estilo da seção de boas-vindas e sobre o site combinadas */
+        section#bem-vindo-sobre {
+            background: #ffffff;
+            padding: 60px 20px;
+        }
+
+        section#bem-vindo-sobre h2 {
+            color: #6f42c1; /* Roxo-azulado */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section#bem-vindo-sobre p {
+            margin-bottom: 20px;
+        }
+
+        /* Estilo da seção de palestrantes */
+        section#palestrantes {
+            background: #ffffff;
+            padding: 40px 20px;
+        }
+
+        section#palestrantes h2 {
+            color: #6f42c1; /* Roxo-azulado */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .palestrante {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f7f9fc; /* Cinza muito claro */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .palestrante img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .palestrante h3 {
+            color: #6f42c1; /* Roxo-azulado */
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .palestrante p {
+            color: #333;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        /* Estilo da seção de cadastro */
+        section#cadastro {
+            background: #ffffff;
+            padding: 40px 20px;
+        }
+
+        section#cadastro h2 {
+            color: #6f42c1; /* Roxo-azulado */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f7f9fc; /* Cinza muito claro */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        form input, form button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        form input[type="submit"] {
+            background-color: #6f42c1; /* Roxo-azulado */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #5a2d81; /* Roxo mais escuro */
+        }
+
+        /* Estilo da seção de direitos reservados */
+        section#direitos-reservados {
+            background: #6f42c1; /* Roxo-azulado */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 20px; /* Espaço acima da seção */
+        }
+
+        section#direitos-reservados p {
+            font-size: 0.9em;
+            margin: 0;
+            padding: 0;
+            font-weight: 300; /* Peso da fonte mais leve */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Workshop</h1>
+        </div>
+    </header>
+
+    <section id="bem-vindo-sobre">
+        <h2>Bem-vindo ao Workshop!</h2>
+        <p>Estamos animados para ter você conosco neste evento incrível. Prepare-se para aprender com os melhores e se inspirar para alcançar novos patamares!</p>
+        <p>Este site foi criado para fornecer todas as informações necessárias sobre o nosso workshop, incluindo a agenda, palestrantes e como se inscrever.</p>
+    </section>
+
+    <section id="palestrantes">
+        <h2>Palestrantes</h2>
+        <div class="palestrante">
+            <img src="palestrante1.jpg" alt="Palestrante 1">
+            <h3>Nome do Palestrante 1</h3>
+            <p>Descrição do palestrante 1. Especialista em sua área com anos de experiência.</p>
+        </div>
+        <div class="palestrante">
+            <img src="palestrante2.jpg" alt="Palestrante 2">
+            <h3>Nome do Palestrante 2</h3>
+            <p>Descrição do palestrante 2. Experiência e conhecimento profundos no tema do workshop.</p>
+        </div>
+        <!-- Adicione mais palestrantes conforme necessário -->
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form action="/submit" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="text" name="telefone" placeholder="Seu telefone" required>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
+
+    <section id="direitos-reservados">
+        <p>&copy; 2024 Seu Nome ou Nome da Empresa. Todos os direitos reservados.</p>
+    </section>
+</body>
+</html>
